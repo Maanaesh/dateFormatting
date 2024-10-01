@@ -1,0 +1,23 @@
+{
+  "name": "datetesting",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@formkit/tempo": "^0.1.2",
+    "any-date-parser": "^1.5.4",
+    "chrono-node": "^2.7.7",
+    "date-fns": "^4.1.0",
+    "dayjs": "^1.10.4",
+    "dayjs-parser": "^0.9.3",
+    "nodemon": "^3.1.7"
+  }
+}
