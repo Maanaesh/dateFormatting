@@ -18,6 +18,7 @@
     "date-fns": "^4.1.0",
     "dayjs": "^1.10.4",
     "dayjs-parser": "^0.9.3",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "regex": "^4.3.2"
   }
 }
