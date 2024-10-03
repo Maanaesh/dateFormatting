@@ -1,4 +1,4 @@
-import { parse } from "date-fns";
+import { format, parse } from "date-fns";
 import { getLocale } from "./getLocale.js";
 
 const pattern = {
@@ -30,7 +30,7 @@ export const getDate = (data,returnFormat) => {
           
           const parsedDate = parse(element, i, new Date());
           if (!isNaN(parsedDate)) {
-            output.push(parsedDate);
+            output.push(format(parsedDate,returnFormat));
           }
         } catch (e) {
           continue;
@@ -41,9 +41,9 @@ export const getDate = (data,returnFormat) => {
   return output;
 };
 
-const test= ["12/04/2022", "15/06/2023", "25/12/2020"];
-let i = getDate(test);
+// const test= ["12/04/2022", "15/06/2023", "25/12/2020"];
+// let i = getDate(test,"dd/MMM/yyyy");
 
-i.forEach(element => {
-  console.log(element.toDateString());
-});
+// i.forEach(element => {
+//   console.log(element);
+// });
