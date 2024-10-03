@@ -1,33 +1,9 @@
 ## Usage
-### getDate(dateStr, locale)
-`dateStr`: The string representing the date you want to parse.
-locale: An optional locale parameter. When set to "uk", the function will attempt to parse the date using common UK date formats. If not provided, it defaults to "us" and uses chrono-node to parse flexible date formats.
-### Supported UK Formats:
-- dd/MM/yyyy
-- dd-MM-yyyy
-- dd MM yyyy
-- dd.MM.yyyy
-### For non-UK locales:
-- The function will use chrono-node to handle date parsing flexibly.
+### getDate(date,returnFormat)
+`dateStr`: an array of dates 
 
-## Examples
-### Non-UK format
-```
-console.log(getDate("03/05/2002").toDateString());
-```
+`returnFormat`: a string representing how the return format of the 
 
-output:
-```
-Tue Mar 05 2002
-```
-### UK-Format
+`return`: function returns an array with the dates in the specified format.
 
-```
-console.log(getDate("03/05/2002","uk").toDateString());
-```
-
-output:
-```
-UK format detected
-Fri May 03 2002
-```
+refer : https://date-fns.org/v4.1.0/docs/format for more about formatting.
